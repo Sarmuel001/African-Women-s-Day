@@ -1,2 +1,2 @@
 # African-Women-s-Day
-design.png
+[Inspiration Image](design.png)
