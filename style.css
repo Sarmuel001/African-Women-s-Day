@@ -1,0 +1,234 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'poppins';
+}
+body{
+  background-color: rgb(218, 218, 218);
+}
+.block{
+  width: 63%;
+  background-color: rgb(255, 255, 255);
+  transform:translate(30%, 20%);
+  display: flex ;
+  justify-content:space-around;
+  height: 500px;
+}
+
+.block .flier-1{
+  margin: 40px;
+  position: relative;
+
+}
+.flier-1 span {
+  text-align: center;
+}
+.flier-1 form{
+  margin: 20px;
+}
+.flier-1 form input{
+  text-align: left;
+  width:280px ;
+  color: rgb(24, 2, 45);
+  border-radius: 2px;
+  border-color: rgb(0, 0, 0);
+}
+
+.flier-1 form p{
+  font-size: 0.8rem;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.flier-1 #fpass{
+  width: 280px;
+  text-align: right; 
+}
+.flier-1 #fpass a{
+  text-decoration: none;
+}
+
+.flier-1 #fpass a:hover{
+  color: blue;
+}
+.flier-1 form button{
+  width: 280px;
+  height: 25px;
+  background-color:blue;
+  border: solid 0px rgb(245, 245, 245);
+  color:white;
+  border-radius: 3px;
+  cursor:pointer;
+  margin-top: 10px;
+}
+.flier-1 #layer{
+  width: 320px;
+text-align: center;
+line-height: 2rem;
+margin-top: -10px;
+}
+.flier-1 #layer #button2{
+  width: 280px;
+  background-color: white;
+  color: blue;  
+  cursor:pointer;
+  border-radius: 3px;
+  border: solid 1px blue;
+}
+
+.flier-1  #layer #button23 {
+  width: 280px;  
+  cursor:pointer;
+  background-color: white;
+  color: blue;
+  border: 0;
+  border-radius: 3px;
+}
+.flier-1 #layer  #button23:hover {
+  background-color: blue;
+  color: rgb(255, 255, 255);
+}
+.block .flier-2 img{
+ margin-top: 1px;
+}
+
+@media screen and (max-width: 1200px){
+.block{
+  width: 50%;
+}
+@media screen and (max-width: 812px){
+  body{
+    background-image: url(women.jpg);
+    background-size: cover;
+  }
+  .block{
+    flex-direction: column;
+    width: 55%;
+    border: dashed 3px blue;
+    border-radius: 10px;
+  }
+  .block .flier-1{
+    width: 350px;
+   color: black;
+  
+  }
+  .block .flier-2{
+    display: none;
+  }
+}
+@media screen and (max-width: 641px){
+  body{
+    background-image: url(women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  .block{
+    flex-direction: column;
+    width: 400px;
+    border: dashed 3px blue;
+    border-radius: 10px;
+  }
+  .block .flier-1{
+    width: auto;
+   color: black;
+  
+  }
+  .block .flier-2{
+    display: none;
+  }
+}
+
+}
+ @media screen and (max-width: 595px){
+  body{
+    background-image: url(women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .block{
+    flex-direction: column;
+    margin:-40px 0px 60px -60px;
+    width: 70%;
+    border: dashed 3px blue;
+    border-radius: 10px;
+  }
+  .block .flier-1{
+    width: 300px;
+  }
+  .block .flier-2{
+    display: none;
+  }
+}
+
+ @media screen and (max-width: 460px){
+  body{
+    background-image: url(women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0px;
+  }
+  .block{
+    flex-direction: column;
+    margin:-70px -120px;
+    width: 85%;
+    border: dashed 3px blue;
+    border-radius: 10px;
+  }
+  .block .flier-1{
+    width: 300px;
+  }
+  .block .flier-2{
+    display: none;
+  }
+}
+@media screen and (max-width: 375px){
+  body{
+    background-image: url(women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0px;
+  }
+  .block{
+    flex-direction: column;
+    margin: -35px -95px;
+    width: 85%;
+    border: dashed 3px blue;
+    border-radius: 10px;
+  }
+  .block .flier-1{
+    width: 300px;
+    margin: 0px;
+  }
+  .block .flier-2{
+    display: none;
+  }
+}
+@media screen and (max-width: 320px){
+  body{
+    background-image: url(women.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 0px;
+
+  }
+  .block{
+    flex-direction: column;
+    /* margin: -35px -95px; */
+    width: 280px;
+    border: dashed 3px blue;
+    border-radius: 10px;
+    text-align: center;
+  }
+  .block .flier-1{
+    width: 300px;
+    margin: 0px;
+  }
+  .block .flier-1 form input{
+    width: 200px;
+  }
+  .block .flier-2{
+    display: none;
+  }
+}
